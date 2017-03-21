@@ -51,28 +51,38 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/relative2"
+        android:id="@+id/layoutHelp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffffffff"
         android:visibility="visible">
 
         <TextView
-            android:text="help"
+            android:text="Help"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:id="@+id/textViewHelp" />
+
+        <TextView
+            android:text="This is Help~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/btn_close"
+            android:layout_below="@+id/textViewHelp" />
 
         <Button
             android:id="@+id/btn_close"
             android:text="close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:onClick="closeHelp" />
+            android:onClick="closeHelp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 
